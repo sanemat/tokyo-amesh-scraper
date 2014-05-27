@@ -1,0 +1,32 @@
+{
+  "name": "tokyo-amesh-parser",
+  "version": "0.0.0",
+  "main": "lib/tokyo-amesh-parser.js",
+  "description": "The best module ever.",
+  "homepage": "https://github.com/sanemat/tokyo-amesh-parser",
+  "bugs": "https://github.com/sanemat/tokyo-amesh-parser/issues",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanemat/tokyo-amesh-parser"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
