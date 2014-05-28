@@ -28,9 +28,11 @@ exports.tokyoAmeshParser = {
     done();
   },
   'no args': function(test) {
-    test.expect(1);
+    test.expect(3);
     // tests here
     test.equal(tokyoAmeshParser.boundaryMapUrl(), 'http://tokyo-ame.jwa.or.jp/map/msk000.png', 'should be boundary.');
+    test.equal(tokyoAmeshParser.landformURL(), 'http://tokyo-ame.jwa.or.jp/map/map000.jpg', 'should be landform.');
+    test.equal(tokyoAmeshParser.rainMeshURL(), 'http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif', 'should be mesh.');
     test.done();
   }
 };
