@@ -1,9 +1,9 @@
-var tokyoAmesh = require('tokyo-amesh')
+var tokyoAmesh = require('tokyo-amesh');
 
 var mesh = tokyoAmesh({highResolution: true});
 var mesh = tokyoAmesh();
 
-mesh.boundalyMapURL();//=> http://tokyo-ame.jwa.or.jp/map/msk000.png
+mesh.boundaryMapURL();//=> http://tokyo-ame.jwa.or.jp/map/msk000.png
 mesh.landformURL();//=> http://tokyo-ame.jwa.or.jp/map/map000.jpg
 mesh.rainMeshURL();//=> http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
 
