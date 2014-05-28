@@ -30,7 +30,7 @@ exports.tokyoAmeshParser = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(tokyoAmeshParser.awesome(), 'awesome', 'should be awesome.');
+    test.equal(tokyoAmeshParser.boundaryMapUrl(), 'http://tokyo-ame.jwa.or.jp/map/msk000.png', 'should be boundary.');
     test.done();
   }
 };
