@@ -1,38 +1,16 @@
 'use strict';
 
 var tokyoAmeshParser = require('../lib/tokyo-amesh-parser.js');
+var assert = require("power-assert");
 
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
-
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
-
-exports.tokyoAmeshParser = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'no args': function(test) {
-    test.expect(3);
-    // tests here
-    test.equal(tokyoAmeshParser.boundaryMapUrl(), 'http://tokyo-ame.jwa.or.jp/map/msk000.png', 'should be boundary.');
-    test.equal(tokyoAmeshParser.landformURL(), 'http://tokyo-ame.jwa.or.jp/map/map000.jpg', 'should be landform.');
-    test.equal(tokyoAmeshParser.rainMeshURL(), 'http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif', 'should be mesh.');
-    test.done();
-  }
-};
+describe('amesh URL', function(){
+  it('should return boundaryMap', function(){
+    assert.equal(tokyoAmeshParser.boundaryMapUrl(), 'http://tokyo-ame.jwa.or.jp/map/msk000.png');
+  });
+  it('should return landform', function(){
+    assert.equal(tokyoAmeshParser.landformURL(), 'http://tokyo-ame.jwa.or.jp/map/map000.jpg');
+  });
+  it('should return mesh', function(){
+    assert.equal(tokyoAmeshParser.rainMeshURL(), 'http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif');
+  });
+});
