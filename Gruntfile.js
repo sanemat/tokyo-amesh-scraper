@@ -8,8 +8,11 @@ module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    simplemocha: {
-      all: {
+    mochaTest: {
+      test: {
+        options: {
+          require: 'intelli-espower-loader'
+        },
         src: ['test/**/*_test.js']
       }
     },
@@ -35,17 +38,17 @@ module.exports = function (grunt) {
       },
       lib: {
         files: '<%= jshint.lib.src %>',
-        tasks: ['jshint:lib', 'simplemocha']
+        tasks: ['jshint:lib', 'mochaTest']
       },
       test: {
         files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'simplemocha']
+        tasks: ['jshint:test', 'mochaTest']
       }
     }
   });
-  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.loadNpmTasks('grunt-mocha-test');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'simplemocha']);
+  grunt.registerTask('default', ['jshint', 'mochaTest']);
 
 };
