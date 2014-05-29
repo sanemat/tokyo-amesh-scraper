@@ -11,7 +11,8 @@ module.exports = function (grunt) {
     mochaTest: {
       test: {
         options: {
-          require: 'intelli-espower-loader'
+          require: 'intelli-espower-loader',
+          reporter: 'spec'
         },
         src: ['test/**/*_test.js']
       }
