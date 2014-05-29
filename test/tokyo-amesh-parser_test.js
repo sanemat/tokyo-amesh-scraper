@@ -1,7 +1,7 @@
 'use strict';
 
 var tokyoAmeshParser = require('../lib/tokyo-amesh-parser.js');
-var assert = require("assert");
+var assert = require("power-assert");
 
 describe('amesh URL', function(){
   it('should return boundaryMap', function(){
