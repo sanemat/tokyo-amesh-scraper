@@ -1,6 +1,7 @@
 var tokyoAmeshScraper = require('tokyo-amesh-scraper');
 
 var amesh = tokyoAmeshScraper({highResolution: true});
+//or
 var amesh = tokyoAmeshScraper();
 
 amesh.boundaryMapURL(function(data){});// data => http://tokyo-ame.jwa.or.jp/map/msk000.png
