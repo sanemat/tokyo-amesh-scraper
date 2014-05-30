@@ -39,6 +39,7 @@
     "test": "grunt"
   },
   "dependencies": {
-    "request": "^2.36.0"
+    "request": "^2.36.0",
+    "sprintf-js": "0.0.7"
   }
 }
