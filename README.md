@@ -6,21 +6,19 @@ The scraper for tokyo-ame.jwa.or.jp
 Install the module with: `npm install tokyo-amesh-scraper`
 
 ```javascript
-var tokyo-amesh-scraper = require('tokyo-amesh-scraper');
-tokyo-amesh-scraper.awesome(); // "awesome"
+var TokyoAmeshScraper = require('tokyo-amesh-scraper');
+var amesh = TokyoAmeshScraper();
+
+amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk000.png
+amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map000.jpg
+amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
 ```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+v0.1.0 Adjust high resolution/ normal resolution.
 
 ## License
 Copyright (c) 2014 sanemat. Licensed under the MIT license.
