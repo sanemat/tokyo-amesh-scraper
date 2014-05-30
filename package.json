@@ -1,17 +1,17 @@
 {
-  "name": "tokyo-amesh-parser",
+  "name": "tokyo-amesh-scraper",
   "version": "0.0.0",
-  "main": "lib/tokyo-amesh-parser.js",
+  "main": "lib/tokyo-amesh-scraper.js",
   "description": "The scraper for tokyo-ame.jwa.or.jp",
-  "homepage": "https://github.com/sanemat/tokyo-amesh-parser",
-  "bugs": "https://github.com/sanemat/tokyo-amesh-parser/issues",
+  "homepage": "https://github.com/sanemat/tokyo-amesh-scraper",
+  "bugs": "https://github.com/sanemat/tokyo-amesh-scraper/issues",
   "author": {
     "name": "sanemat",
     "email": "o.gata.ken@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanemat/tokyo-amesh-parser"
+    "url": "https://github.com/sanemat/tokyo-amesh-scraper"
   },
   "directories": {
     "test": "test/"

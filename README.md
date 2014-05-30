@@ -1,13 +1,13 @@
-# tokyo-amesh-parser [![Build Status](https://secure.travis-ci.org/sanemat/tokyo-amesh-parser.png?branch=master)](http://travis-ci.org/sanemat/tokyo-amesh-parser)
+# tokyo-amesh-scraper [![Build Status](https://secure.travis-ci.org/sanemat/tokyo-amesh-scraper.png?branch=master)](http://travis-ci.org/sanemat/tokyo-amesh-scraper)
 
 The best module ever.
 
 ## Getting Started
-Install the module with: `npm install tokyo-amesh-parser`
+Install the module with: `npm install tokyo-amesh-scraper`
 
 ```javascript
-var tokyo-amesh-parser = require('tokyo-amesh-parser');
-tokyo-amesh-parser.awesome(); // "awesome"
+var tokyo-amesh-scraper = require('tokyo-amesh-scraper');
+tokyo-amesh-scraper.awesome(); // "awesome"
 ```
 
 ## Documentation
