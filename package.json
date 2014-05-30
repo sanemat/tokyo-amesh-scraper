@@ -2,12 +2,12 @@
   "name": "tokyo-amesh-parser",
   "version": "0.0.0",
   "main": "lib/tokyo-amesh-parser.js",
-  "description": "The best module ever.",
+  "description": "The scraper for tokyo-ame.jwa.or.jp",
   "homepage": "https://github.com/sanemat/tokyo-amesh-parser",
   "bugs": "https://github.com/sanemat/tokyo-amesh-parser/issues",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "sanemat",
+    "email": "o.gata.ken@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
   "files": [
     "lib"
   ],
-  "keywords": [],
+  "keywords": [
+    "scraper",
+    "scraping"
+
+  ],
   "devDependencies": {
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
