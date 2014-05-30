@@ -17,6 +17,12 @@ module.exports = function (grunt) {
         src: ['test/**/*_test.js']
       }
     },
+    release: {
+      options: {
+        tagName: 'v<%= version %>',
+        commitMessage: 'Prepared to release <%= version %>.'
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -48,6 +54,7 @@ module.exports = function (grunt) {
     }
   });
   grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-release');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'mochaTest']);
