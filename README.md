@@ -17,6 +17,19 @@ amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map000
 amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
 ```
 
+### One More Thing
+This is high resolution.
+
+```javascript
+var TokyoAmeshScraper = require('tokyo-amesh-scraper');
+var amesh = TokyoAmeshScraper({ highResolution: true });
+
+amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk100.png
+amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map100.jpg
+amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/100/201405272250.gif
+```
+
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
