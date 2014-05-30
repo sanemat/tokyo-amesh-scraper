@@ -4,15 +4,22 @@ var tokyoAmeshScraper = require('../lib/tokyo-amesh-scraper.js');
 var assert = require("power-assert");
 var nock = require('nock');
 
-describe('amesh URL', function(){
+describe('normal resolution', function(){
+  var amesh;
+
+  before(function(done){
+    amesh = tokyoAmeshScraper();
+    done();
+  });
+
   it('should return boundaryMap', function(done){
-    tokyoAmeshScraper.boundaryMapUrl(function(url){
+    amesh.boundaryMapURL(function(url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/msk000.png');
       done();
     });
   });
   it('should return landform', function(done){
-    tokyoAmeshScraper.landformURL(function(url){
+    amesh.landformURL(function(url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/map000.jpg');
       done();
     });
@@ -21,7 +28,7 @@ describe('amesh URL', function(){
     nock('http://tokyo-ame.jwa.or.jp')
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
-    tokyoAmeshScraper.rainMeshURL(function(url){
+    amesh.rainMeshURL(function(url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301955.gif');
       done();
     });
