@@ -1,6 +1,9 @@
-# tokyo-amesh-scraper [![Build Status](https://secure.travis-ci.org/sanemat/tokyo-amesh-scraper.png?branch=master)](http://travis-ci.org/sanemat/tokyo-amesh-scraper)
+# tokyo-amesh-scraper
+[![Npm Version](http://img.shields.io/npm/v/tokyo-amesh-scraper.svg?style=flat)](http://badge.fury.io/js/tokyo-amesh-scraper)
+[![Build Status](http://img.shields.io/travis/sanemat/tokyo-amesh-scraper/master.svg?style=flat)](https://travis-ci.org/sanemat/tokyo-amesh-scraper)
+[![Code Climate](http://img.shields.io/codeclimate/github/sanemat/tokyo-amesh-scraper.svg?style=flat)](https://codeclimate.com/github/sanemat/tokyo-amesh-scraper)
 
-The scraper for tokyo-ame.jwa.or.jp
+Scrape image urls of `tokyo-ame.jwa.or.jp`
 
 ## Getting Started
 Install the module with: `npm install tokyo-amesh-scraper`
