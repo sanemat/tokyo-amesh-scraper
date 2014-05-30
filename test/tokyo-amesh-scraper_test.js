@@ -45,13 +45,13 @@ describe('high resolution', function(){
 
   it('should return boundaryMap', function(done){
     amesh.boundaryMapURL(function(url){
-      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/msk000.png');
+      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/msk100.png');
       done();
     });
   });
   it('should return landform', function(done){
     amesh.landformURL(function(url){
-      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/map000.jpg');
+      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/map100.jpg');
       done();
     });
   });
@@ -60,7 +60,7 @@ describe('high resolution', function(){
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
     amesh.rainMeshURL(function(url){
-      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301955.gif');
+      assert.equal(url, 'http://tokyo-ame.jwa.or.jp/mesh/100/201405301955.gif');
       done();
     });
   });
