@@ -1,6 +1,6 @@
 # tokyo-amesh-scraper [![Build Status](https://secure.travis-ci.org/sanemat/tokyo-amesh-scraper.png?branch=master)](http://travis-ci.org/sanemat/tokyo-amesh-scraper)
 
-The best module ever.
+The scraper for tokyo-ame.jwa.or.jp
 
 ## Getting Started
 Install the module with: `npm install tokyo-amesh-scraper`
@@ -23,4 +23,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2014 . Licensed under the MIT license.
+Copyright (c) 2014 sanemat. Licensed under the MIT license.
