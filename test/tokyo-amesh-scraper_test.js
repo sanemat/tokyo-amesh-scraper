@@ -33,6 +33,17 @@ describe('normal resolution', function(){
       done();
     });
   });
+  it('should return mesh urls', function(done){
+    nock('http://tokyo-ame.jwa.or.jp')
+      .get('/scripts/mesh_index.js')
+      .replyWithFile(200, __dirname + '/mesh_result.txt');
+    amesh.rainMeshURLs(function(urls){
+      assert.equal(urls[0], 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301955.gif');
+      assert.equal(urls[24], 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301755.gif');
+      assert.equal(urls.length, 25);
+      done();
+    });
+  });
 });
 
 describe('high resolution', function(){
