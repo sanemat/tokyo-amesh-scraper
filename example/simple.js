@@ -8,6 +8,9 @@ amesh.boundaryMapURL(function(data){});// data => http://tokyo-ame.jwa.or.jp/map
 amesh.landformURL(function(data){});// data => http://tokyo-ame.jwa.or.jp/map/map000.jpg
 amesh.rainMeshURL(function(data){});// data => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
 
+amesh.rainMeshURLs(function(data){
+  data;// => ['http://meshURL1', 'http://meshURL2', ...]
+});
 // http://tokyo-ame.jwa.or.jp/scripts/mesh_index.js
 // or
 // img#railfallMesh src
