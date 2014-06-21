@@ -12,9 +12,18 @@ Install the module with: `npm install tokyo-amesh-scraper`
 var TokyoAmeshScraper = require('tokyo-amesh-scraper');
 var amesh = TokyoAmeshScraper();
 
-amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk000.png
-amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map000.jpg
-amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
+amesh.boundaryMapURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/map/msk000.png
+});
+amesh.landformURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/map/map000.jpg
+});
+amesh.rainMeshURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
+});
+amesh.rainMeshURLs(function(err, data){
+  data;// => ['http://meshURL1', 'http://meshURL2', ...]
+});
 ```
 
 ### One More Thing
@@ -24,9 +33,18 @@ This is high resolution.
 var TokyoAmeshScraper = require('tokyo-amesh-scraper');
 var amesh = TokyoAmeshScraper({ highResolution: true });
 
-amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk100.png
-amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map100.jpg
-amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/100/201405272250.gif
+amesh.boundaryMapURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/map/msk100.png
+});
+amesh.landformURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/map/map100.jpg
+});
+amesh.rainMeshURL(function(err, data){
+  data;// => http://tokyo-ame.jwa.or.jp/mesh/100/201405272250.gif
+});
+amesh.rainMeshURLs(function(err, data){
+  data;// => ['http://meshURL1', 'http://meshURL2', ...]
+});
 ```
 
 
