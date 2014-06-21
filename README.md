@@ -52,7 +52,11 @@ amesh.rainMeshURLs(function(err, data){
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-v0.1.0 Adjust high resolution/ normal resolution.
+### v1.0.0
+- Change API argument
+- Add `#rainMeshURLs` for get all rain meshes
+### v0.1.0
+- Adjust high resolution/ normal resolution.
 
 ## License
 Copyright (c) 2014 sanemat. Licensed under the MIT license.
