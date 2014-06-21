@@ -13,13 +13,13 @@ describe('normal resolution', function(){
   });
 
   it('should return boundaryMap', function(done){
-    amesh.boundaryMapURL(function(url){
+    amesh.boundaryMapURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/msk000.png');
       done();
     });
   });
   it('should return landform', function(done){
-    amesh.landformURL(function(url){
+    amesh.landformURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/map000.jpg');
       done();
     });
@@ -28,7 +28,7 @@ describe('normal resolution', function(){
     nock('http://tokyo-ame.jwa.or.jp')
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
-    amesh.rainMeshURL(function(url){
+    amesh.rainMeshURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301955.gif');
       done();
     });
@@ -37,7 +37,7 @@ describe('normal resolution', function(){
     nock('http://tokyo-ame.jwa.or.jp')
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
-    amesh.rainMeshURLs(function(urls){
+    amesh.rainMeshURLs(function(err, urls){
       assert.equal(urls[0], 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301955.gif');
       assert.equal(urls[24], 'http://tokyo-ame.jwa.or.jp/mesh/000/201405301755.gif');
       assert.equal(urls.length, 25);
@@ -55,13 +55,13 @@ describe('high resolution', function(){
   });
 
   it('should return boundaryMap', function(done){
-    amesh.boundaryMapURL(function(url){
+    amesh.boundaryMapURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/msk100.png');
       done();
     });
   });
   it('should return landform', function(done){
-    amesh.landformURL(function(url){
+    amesh.landformURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/map/map100.jpg');
       done();
     });
@@ -70,7 +70,7 @@ describe('high resolution', function(){
     nock('http://tokyo-ame.jwa.or.jp')
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
-    amesh.rainMeshURL(function(url){
+    amesh.rainMeshURL(function(err, url){
       assert.equal(url, 'http://tokyo-ame.jwa.or.jp/mesh/100/201405301955.gif');
       done();
     });
@@ -79,7 +79,7 @@ describe('high resolution', function(){
     nock('http://tokyo-ame.jwa.or.jp')
       .get('/scripts/mesh_index.js')
       .replyWithFile(200, __dirname + '/mesh_result.txt');
-    amesh.rainMeshURLs(function(urls){
+    amesh.rainMeshURLs(function(err, urls){
       assert.equal(urls[0], 'http://tokyo-ame.jwa.or.jp/mesh/100/201405301955.gif');
       assert.equal(urls[24], 'http://tokyo-ame.jwa.or.jp/mesh/100/201405301755.gif');
       assert.equal(urls.length, 25);

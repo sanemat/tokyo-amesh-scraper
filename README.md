@@ -12,9 +12,9 @@ Install the module with: `npm install tokyo-amesh-scraper`
 var TokyoAmeshScraper = require('tokyo-amesh-scraper');
 var amesh = TokyoAmeshScraper();
 
-amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk000.png
-amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map000.jpg
-amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
+amesh.boundaryMapURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk000.png
+amesh.landformURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/map/map000.jpg
+amesh.rainMeshURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/000/201405272250.gif
 ```
 
 ### One More Thing
@@ -24,9 +24,9 @@ This is high resolution.
 var TokyoAmeshScraper = require('tokyo-amesh-scraper');
 var amesh = TokyoAmeshScraper({ highResolution: true });
 
-amesh.boundaryMapURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk100.png
-amesh.landformURL(callback);// callback => http://tokyo-ame.jwa.or.jp/map/map100.jpg
-amesh.rainMeshURL(callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/100/201405272250.gif
+amesh.boundaryMapURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/map/msk100.png
+amesh.landformURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/map/map100.jpg
+amesh.rainMeshURL(err, callback);// callback => http://tokyo-ame.jwa.or.jp/mesh/100/201405272250.gif
 ```
 
 
